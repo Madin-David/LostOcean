@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Ocean-0.0.1</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Lost Ocean</h1>
+        </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                <h id="time">aa</h>
+            </p>
+        </div>
+    </div>
+    <script>
+        function timer(){
+        time = new Date();
+        now = time.getTime();
+        document.getElementById("time").innerHTML="该项目已开发"+((now-1658559456241)/1000)+"秒";
+        setInterval("timer()",1000);
+        }
+        timer();
+    </script>
+</body>
+</html>
